@@ -10,3 +10,15 @@ def combination_sort(str):
     l2 = sorted(l1,key = second_letter )
     return(l1,l2)
 
+#another way 
+def combination_anotherway(str):
+    l1 = sorted(str,key = lambda x : x[0])
+    l2 = sorted(l1,key = lambda x: (x[0],-int(x[1:])))
+    return (l1,l2)
+
+sample_input = ["d34", "g54", "d12", "b87", "g1", "c65", "g40", "g5", "d77"]
+L1, L2 = combination_anotherway(sample_input)
+
+print("L1:", ", ".join(L1))
+print("L2:", ", ".join(L2))
+
