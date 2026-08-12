@@ -1,4 +1,4 @@
-def findConnectionLevel(n,gmat,px,py): #gmat is adjacent matrix
+def findConnectionLevel(n,gmat,px,py): #gmat is adjacent matrix . px and py are starting person and the target person 
     if px == py:
         return 0
     
